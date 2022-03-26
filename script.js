@@ -1,5 +1,5 @@
 var scoresEl= document.querySelector(".scores");
-//var timerEl= document.querySelector(".timer-count");
+var timerEl= document.querySelector(".timer-count");
 var showTime= document.getElementById("timer");
 var startBtn = document.getElementById("start-quiz");
 //console.log (startBtn);
@@ -9,20 +9,23 @@ var timerSec= 5;
 startBtn.addEventListener("click", function(){
    // alert("working");
     
-timerEl =setInterval(function() {
+var timer =setInterval(function() {
     timerSec--;
-    if(timerSec > 0) {
-        // var pTag=document.createElement("p");
-        // pTag.textContent= timerSec;
-        showTime.appendChild(span);
-        console.log("working timer", timerSec);
-    }else {
-        clearInterval(timerEl);
-        console.log("Time is up");
+    if(timerSec < 0) {
+        clearInterval(timer);
+        alert("Quiz Over!");
+        timerEl.textContent = "Quiz Over!";
+    // }else if (timerSec === 0) {
+    //     alert="Quiz Over!"
+    //     showTime.textContent ="Timer: 0"
     }
+    else{
+        timerEl.textContent= "Timer: " + timerSec
+    }
+       
+        //console.log("Time is up");
 
     }, 1000)
-
 })
 
 // Acceptance Criteria
