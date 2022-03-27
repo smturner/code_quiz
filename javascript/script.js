@@ -2,9 +2,7 @@ var scoresEl= document.querySelector(".scores");
 var timerEl= document.querySelector(".timer-count");
 var showTime= document.getElementById("timer");
 var startBtn = document.getElementById("start-quiz");
-//console.log (startBtn);
-// var startScreenEl = document.querySelector(".wrapper")
-// console.log(wrapper)
+var highScoreEl = document.getElementById
 var timerSec= 5;
 startBtn.addEventListener("click", function(){
    // alert("working");
