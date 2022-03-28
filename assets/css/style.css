@@ -25,6 +25,7 @@ float:left;
 }
 
 main {
+
     text-align: center;
 
 }
@@ -39,6 +40,24 @@ main div p {
 }
 
 .hide {
-    display: none;
+    /* display: none; */
+visibility: hidden;
+}
+.show{
+    /* display:block; */
+visibility:visible;
+}
+
+#questions {
+
+    margin:50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.btn {
+    font-size: 20px;
+    background-color: rgb(78, 78, 116);
+    color: white;
 
 }
