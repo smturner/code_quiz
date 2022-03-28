@@ -4,15 +4,15 @@ var timerEl= document.querySelector(".timer-count");
 var showTime= document.getElementById("timer");
 var startBtn = document.getElementById("start-quiz");
 var highScoreEl = document.getElementById("high-scores");
-var questionsEl = document.getElementById("questions");
-var choicesEl= document.querySelector("#quiz-choices");
+var questionsEl = document.querySelector("#questions");
+var choicesEl= document.querySelector("#answerChoices");
 var initalsEl= document.getElementById("initials");
 var feedbackEl= document.getElementById("feedback");
 //var startScreenEl= document.getElementById("start-screen");
-//console.log (startBtn);
 // var startScreenEl = document.querySelector(".wrapper")
 // console.log(wrapper)
 var timerSec= 5;
+var currentQuestionIndex =0;
 
 startBtn.addEventListener("click", startQuiz);
 // startBtn.addEventListener("click", function() {
@@ -36,14 +36,35 @@ startBtn.addEventListener("click", startQuiz);
 //})
 
 function startQuiz (){
-    var startScreenEL= document.getElementById("start-screen");
-    startScreenEL.setAttribute("class", "hide");
-    questionsEl.removeAttribute("class");
+    var startScreenEl = document.getElementById("start-screen");
+  startScreenEl.setAttribute("class", "hide");
+
+  // un-hide questions section
+  questionsEl.setAttribute("class", "display:block");
+
+  //getQuestion();
 }
 
 function getQuestion (){
-    
-}
+    var currentQuestion= questions[currentQuestionIndex];
+    // console.log ("currentQuestion")
+    var textEL= document.getElementById("question-text");
+    textEL.textContent = currentQuestion.textEL;
+    //choicesEl.innerHTML ="";
+    // currentQuestion.answerChoices.forEach(function(choice, i) {
+//     // create new button for each choice
+//     var choiceNode = document.createElement("button");
+//     choiceNode.setAttribute("class", "choice");
+//     choiceNode.setAttribute("value", choice);
+
+    // choiceNode.textContent = i + 1 + ". " + choice;
+
+    // // attach click event listener to each choice
+    // choiceNode.onclick = questionClick;
+
+    // // display on the page
+    // choicesEl.appendChild(choiceNode);
+  }
 
 
 
