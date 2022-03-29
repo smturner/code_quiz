@@ -1,4 +1,4 @@
-var questions=[{
+var questionsArr=[{
 
     title: "Commonly used data types DO NOT include:",
     choices: ["1. stings", "2. booleans", "3. alerts", "4. numbers"],
