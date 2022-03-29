@@ -3,10 +3,14 @@
     padding: 0;
     margin: 0; 
 }
+
+
 header {
     display:block;
     width:100%;
     height: 100px;
+    background-color:rgb(204, 130, 130);
+    color: white;
 }
 
 header div {
@@ -16,18 +20,47 @@ header div {
     border: 20px;
 }
 
+.wrappers{
+    margin: 100px auto 0 auto;
+    max-width: 600px;
+  }
+
+body {
+    background-color:rgb(255, 234, 234);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.start {
+      text-align: center;
+  }
+.start h1{
+    font-size: 50px
+}
+
+.start p {
+    margin-right: 400px;
+    margin-left: 400px;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif}
+
+#start-quiz {
+    font-size: 30px;
+    background-color:rgb(138, 63, 63);
+    color:white;
+
+}
+
 .scores {
-float:left;
+    float:left;
+}
+
+.scores a {
+    color:white;
+
 }
 
 .timer-count  {
-        float: right;
-}
-
-main {
-
-    text-align: center;
-
+    float: right;
 }
 
 h1 {
@@ -35,7 +68,7 @@ h1 {
     padding:20px;
 }
 
-main div p {
+div p {
     padding: 20px;
 }
 
@@ -49,15 +82,19 @@ visibility:visible;
 }
 
 #questions {
-
-    margin:50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* margin:50px; */
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .btn {
-    font-size: 20px;
-    background-color: rgb(78, 78, 116);
+    font-size: 30px;
+    background-color: rgb(138, 63, 63);
     color: white;
 
+}
+
+#finished-page {
+    text-align: center;
 }
