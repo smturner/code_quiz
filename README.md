@@ -4,7 +4,7 @@
 This project was to create a quiz with questions about coding. It was to have a timer that went down 5 seconds when an incorrect answer was pressed. It also was to have a end screen that showed your score and allowed you to put your initials in to save your score to the local storage. On the start page there was a link to the highscores that allows you to quickly access the scores.
 
 ## Screen Shot
-![This photo shows the webpage when pulled up before it is deployed.](./photo1.png)
+![This photo shows home screen of the quiz.](./photo1.png)
 
 ## Project Features
 
