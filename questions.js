@@ -1,3 +1,4 @@
+// Array of questions to pull from for the quiz
 var questionsArr=[{
 
     title: "Commonly used data types DO NOT include:",
@@ -16,5 +17,13 @@ var questionsArr=[{
     choices: ["1. numbers and strings", "2. other arrays", "3. booleans", "4. all of the above"],
     answer: "4. all of the above",
 },
+{
+
+    title: "String values must be enclosed withing _________ when being assigned to variables.", 
+    choices: ["1. commas",  "2. curley brackets", "3. quotes", "4. parentheses"],
+    answer: "3. quotes",
+
+
+}
 ]
 

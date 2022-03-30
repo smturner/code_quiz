@@ -11,7 +11,7 @@
 <body>
     <header>
         <div>
-        <div class="scores"><a href="#high-scores">View Highscores</a>
+        <div class="scores"><a href="#highScores">View Highscores</a>
         </div>
     
         <div class= "timer-count" >Timer: <span id="timer">0</span></div>
@@ -28,8 +28,6 @@
         <div id="questions" class="hide">
             <h2 id="question-title"></h2>
             <div id="answers" class="answers"></div><br>
-            <div id="response" class="response"></div>
-            <!-- <div id= "allBtns" class="hide"> -->
             <button id="btn-1" class="btn">Answer1</button><br>
             <button id="btn-2" class="btn">Answer2</button><br>
             <button id="btn-3" class="btn">Answer3</button><br>
@@ -39,16 +37,19 @@
         </div>
 
         <div id="finished-page" class="hide">
+            
             <h2>All Done!</h2>
             <p>Your final score is <span id="final-score"></span>.</p>
             <p>Enter Initials: <input type="text" id="initials" max=3>
             <button id="submit">Submit</button>
             </p>
         </div>
-        <div id="feedback" class="feedback hide"></div>
+        <div id="highScores" class="hide"> </div>
     </div>
 </main>    
     <script src="questions.js"></script>
     <script src="script.js"> </script>
 </body>
 </html>
+
+

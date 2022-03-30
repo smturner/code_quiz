@@ -96,5 +96,18 @@ visibility:visible;
 }
 
 #finished-page {
+    margin: -250px 0px;
+    text-align:center;
+    font-size: 30px;
+}
+
+#highScores {
+    /* display:flex; */
+    font-size: 30px;
+    color: white;
+    background-color: rgb(138, 63, 63) ;
+    border:rgb(71, 29, 29) solid 5px;
     text-align: center;
+    margin: -400px 0;
+    /* padding-left: 800px; */
 }
