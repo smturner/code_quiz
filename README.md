@@ -23,6 +23,5 @@ This project has the following features:
 
 <a href="https://github.com/smturner/code_quiz">GitHub link </a>
 
-<a href="file:///Users/sarahturner/Desktop/Bootcamp_Homework/code_quiz/index.html#highScores">Web Application Link </a>
-
+<a href="Users/sarahturner/Desktop/Bootcamp_Homework/code_quiz/index.html#highScores">Web Application Link </a>
 
