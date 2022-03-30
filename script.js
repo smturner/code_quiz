@@ -147,6 +147,19 @@ function saveHighscore() {
     highScoreEl.append(highScoreList)
    }
 
+var goBackBtn= document.getElementById("go-back")
+//button to go back to the start of the quiz
+goBackBtn.addEventListener("click", function () {
+  var highScoreEl =document.getElementById("highScores");
+highScoreEl.setAttribute("class", "hide");
+  var startScreenEl = document.getElementById("start-screen");
+startScreenEl.setAttribute("class", "show");
+
+})
+
+
+
+
 //buttons throughout the pages
 scoresBtn.addEventListener("click", renderHighScore);
 startBtn.addEventListener("click", startQuiz);
